@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="MPUsuario.master.cs" Inherits="proyecto.Vistas.Usuario.MPUsuario" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContenidoMenuContextual" runat="server">
+
+    <ul id="menuContextual">
+        <li> <a href="AgregarAdministrador.aspx">Agregar Usuario</a> </li>
+        <li> <a href="AdministrarUsuarios.aspx">Administrar Usuarios</a> </li>
+        <li> <a href="VerUsuarios.aspx">Ver Usuarios</a> </li>
+    </ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContenidoPrincipal" runat="server">
+     <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

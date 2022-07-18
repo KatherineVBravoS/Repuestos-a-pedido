@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="proyecto.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            height: 93px;
+        }
+
+        .auto-style4 {
+            width: 45px;
+            height: 38px;
+        }
+        .auto-style5 {
+            width: 52px;
+            height: 32px;
+        }
+        .auto-style6 {
+            width: 49px;
+            height: 34px;
+        }
+        .auto-style7 {
+            width: 45px;
+            height: 29px;
+        }
+    </style>
+
+</head>
+<body style="height: 914px">
+    <form id="form1" runat="server">
+        <div>
+            <div id="cabezera">
+                <div id="barraHorizontal">
+                    <ul>
+                        <li><a href="/Inicio.aspx">Inicio</a></li>
+                        <li><a href="/View/Sobre nosotros/SobreNosotros.aspx">Sobre nosotros</a></li>
+                        <li><a href="/View/Repuestos/RepuestosCliente.aspx">Repuestos</a></li>
+                        <li><a href="/View/Cotizar/Cotizar.aspx">Cotizar</a></li>
+                        <li><a href="/View/Envios/AdministrarEnvios.aspx">Envios</a></li>
+                        <li><a href="/View/Cambios/Cambios.aspx">Cambios</a></li>
+                        <li> <a href="/View/Carrito/Carrito.aspx"><img class="auto-style4" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" data-src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="" data-srcset="https://cdn-icons-png.flaticon.com/512/107/107831.png 194w, https://cdn-icons-png.flaticon.com/512/107/107831.png 291w" sizes="(max-width: 97px) 100vw, 97px" srcset="https://cdn-icons-png.flaticon.com/512/107/107831.png 194w, https://cdn-icons-png.flaticon.com/512/107/107831.png 291w"></a></li>
+                    </ul>
+                </div>
+                <br />
+                <asp:ContentPlaceHolder ID="buscadores" runat="server">
+                  
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="bajo">
+                <div id="columnIzq">
+                    <asp:ContentPlaceHolder ID="ContenidoMenuContextual" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="columnCentro">
+                    <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+                        <p></p> <p></p> <p></p><p></p><p></p><p> </p> <p></p><p></p>
+                        <p></p><p></p> <p> </p><p></p><p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p><p></p><p></p>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="pie" class="auto-style1" >
+                    <h5>Todos los derechos reservados.</h5>
+                    <div id="Facebook">
+                       <a href="https://www.facebook.com/repuestosapedido.cl" class="auto-style5"><img class="auto-style7" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" data-src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="" data-srcset="https://cdn-icons-png.flaticon.com/512/124/124010.png 194w, https://cdn-icons-png.flaticon.com/512/124/124010.png 291w" sizes="(max-width: 97px) 100vw, 97px" srcset="https://cdn-icons-png.flaticon.com/512/124/124010.png 194w, https://cdn-icons-png.flaticon.com/512/124/124010.png 291w" aria-orientation="vertical"></a>
+                        </div>
+                        <div id="WhatsApp">
+                        <a href="https://api.whatsapp.com/send?phone=56995672146"><img class="auto-style6" src="https://sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon-150x150.png" data-src="https://sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon-150x150.png" alt="" data-srcset="https://i0.wp.com/sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon.png?zoom=2&amp;resize=97%2C107&amp;ssl=1 194w, https://i0.wp.com/sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon.png?zoom=3&amp;resize=97%2C107&amp;ssl=1 291w" sizes="(max-width: 97px) 100vw, 97px" srcset="https://i0.wp.com/sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon.png?zoom=2&amp;resize=97%2C107&amp;ssl=1 194w, https://i0.wp.com/sherpadigital.es/wp-content/uploads/2017/10/whatsapp-icon.png?zoom=3&amp;resize=97%2C107&amp;ssl=1 291w"></a>
+                        </div>
+                    <ul>
+                        <li><a href="/View/Administrador/Login.aspx">Login Admin</a></li>
+                    </ul>
+                 </div>
+                    
+                </div>
+            </div>
+    </form>
+</body>
+</html>
+    
