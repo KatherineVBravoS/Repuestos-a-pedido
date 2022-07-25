@@ -73,6 +73,7 @@ namespace proyecto.View.Repuestos
             TextBox n_parte = (TextBox)GridRepuestosClientes.Rows[e.RowIndex].FindControl("inputNumeroParte");
             TextBox precio = (TextBox)GridRepuestosClientes.Rows[e.RowIndex].FindControl("inputPrecio");
             TextBox stock = (TextBox)GridRepuestosClientes.Rows[e.RowIndex].FindControl("inputStock");
+            TextBox descripcion = (TextBox)GridRepuestosClientes.Rows[e.RowIndex].FindControl("inputDescripcion");
             FileUpload imagenNueva = (FileUpload)GridRepuestosClientes.Rows[e.RowIndex].FindControl("ImagenUpdate");
             Stream sm = imagenNueva.PostedFile.InputStream;
             BinaryReader br = new BinaryReader(sm);
@@ -82,8 +83,9 @@ namespace proyecto.View.Repuestos
             repuesto.Nombre_Repuesto = nombre.Text;
             repuesto.Marca = marca.Text;
             repuesto.Modelo = modelo.Text;
-            repuesto.N_Parte = int.Parse(n_parte.Text);
+            repuesto.N_Parte = n_parte.Text;
             repuesto.Precio = precio.Text;
+            repuesto.Descripcion = descripcion.Text;
             repuesto.Stock = int.Parse(stock.Text);
             repuesto.Imagen = imagen;
 
@@ -112,6 +114,11 @@ namespace proyecto.View.Repuestos
                 Response.Redirect(ViewState["PreviousPage"].ToString());
 
             }
+        }
+
+        protected void GridRepuestosClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -9,6 +9,6 @@
       Nos caracteriza el trabajo que hacemos para que sepas si es compatible con tu auto y evitar errores y devoluciones.">
     </asp:Label></p>
        
-    <<img src="../../images/tacometro_www.JPG" style="width: 429px; height: 144px" />"
+    <img src="../../images/tacometro_www.JPG" style="width: 429px; height: 144px" />"
 
 </asp:Content>

@@ -13,5 +13,15 @@ namespace proyecto.Envios
         {
 
         }
+
+        protected void Atras_Click(object sender, EventArgs e)
+        {
+            if (ViewState["PreviousPage"] != null)
+
+            {
+                Response.Redirect(ViewState["PreviousPage"].ToString());
+
+            }
+        }
     }
 }

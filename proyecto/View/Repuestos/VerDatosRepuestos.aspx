@@ -36,10 +36,10 @@
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Numero Parte" HeaderStyle-Width="150px">
             <ItemTemplate>
-                <asp:Label ID="txtNPARTE" runat="server" Text='<%# Eval("N_PARTE") %>'></asp:Label>
+                <asp:Label ID="txtN_PARTE" runat="server" Text='<%# Eval("N_PARTE") %>'></asp:Label>
             </ItemTemplate>
             <EditItemTemplate>
-                <asp:TextBox ID="inputNPARTE" runat="server" Text='<%# Eval("N_PARTE") %>'></asp:TextBox>
+                <asp:TextBox ID="inputN_PARTE" runat="server" Text='<%# Eval("N_PARTE") %>'></asp:TextBox>
             </EditItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Precio" HeaderStyle-Width="150px">
@@ -60,6 +60,9 @@
             </EditItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="descripcion" HeaderStyle-Width="150px">
+        <ItemTemplate>
+                <asp:Label ID="txtDescripcion" runat="server" Text='<%# Eval("DESCRIPCION") %>'></asp:Label>
+        </ItemTemplate>
         <EditItemTemplate>
                 <asp:TextBox ID="inputDescripcion" runat="server" Text='<%# Eval("DESCRIPCION") %>'></asp:TextBox>
             </EditItemTemplate>

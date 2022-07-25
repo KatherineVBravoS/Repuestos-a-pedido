@@ -135,7 +135,7 @@ namespace proyecto.Controller
                 {
                     command.Connection = connection;
                     command.CommandText = "UPDATE repuestos set NOMBRE_REPUESTO=@NOMBRE_REPUESTO, MARCA=@MARCA, MODELO=@MODELO, N_PARTE=@N_PARTE ,PRECIO=@PRECIO, STOCK=@STOCK , DESCRIPCION=@DESCRIPCION ,IMAGEN=@IMAGEN WHERE id_repuestos=" + repuesto.id_repuesto;
-                    command.Parameters.AddWithValue("@NOMBRE", repuesto.Nombre_Repuesto);
+                    command.Parameters.AddWithValue("@NOMBRE_REPUESTO", repuesto.Nombre_Repuesto);
                     command.Parameters.AddWithValue("@MARCA", repuesto.Marca);
                     command.Parameters.AddWithValue("@MODELO", repuesto.Modelo);
                     command.Parameters.AddWithValue("@N_PARTE", repuesto.N_Parte);

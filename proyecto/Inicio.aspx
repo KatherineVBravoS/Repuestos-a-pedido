@@ -19,10 +19,11 @@
                 <asp:DropDownList runat="server" ID="DlAnio">
                 </asp:DropDownList>
             &nbsp;&nbsp;&nbsp;&nbsp;
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                     <asp:Button ID="Buscar" runat="server" Text="Buscar" OnClick="Buscar_Click" />
                         </formview>
                     </nav>
 </asp:Content>
+
 
 <asp:Content ID="Productos" ContentPlaceHolderID="ContenidoPrincipal" runat="server">
     <asp:DataList DataKeyFiles="id_repuestos" runat="server" ID="dtProductos" 

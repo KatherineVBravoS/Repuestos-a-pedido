@@ -45,7 +45,7 @@
                         <li><a href="/View/Sobre nosotros/SobreNosotros.aspx">Sobre nosotros</a></li>
                         <li><a href="/View/Repuestos/RepuestosCliente.aspx">Repuestos</a></li>
                         <li><a href="/View/Cotizar/Cotizar.aspx">Cotizar</a></li>
-                        <li><a href="/View/Envios/AdministrarEnvios.aspx">Envios</a></li>
+                        <li><a href="/View/Envios/AdministrarEnvios.aspx">Seguimiento</a></li>
                         <li><a href="/View/Usuario/Registro.aspx">Registrarse</a></li>
                         <li> <a href="/View/Carrito/Carrito.aspx"><img class="auto-style4" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" data-src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="" data-srcset="https://cdn-icons-png.flaticon.com/512/107/107831.png 194w, https://cdn-icons-png.flaticon.com/512/107/107831.png 291w" sizes="(max-width: 97px) 100vw, 97px" srcset="https://cdn-icons-png.flaticon.com/512/107/107831.png 194w, https://cdn-icons-png.flaticon.com/512/107/107831.png 291w"></a></li>
                     </ul>

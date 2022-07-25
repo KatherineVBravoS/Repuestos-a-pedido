@@ -41,7 +41,7 @@ namespace proyecto.Repuestos
         {
            
             
-            if (!inputMarca.Text.Equals("") && !inputNombreRepuesto1.Equals("") && !inputModelo.Text.Equals("") && !inputPrecio.Text.Equals("") && !inputStock.Text.Equals(""))  
+            if (!inputMarca.Text.Equals("") && !inputNombreRepuesto1.Equals("") && !inputN_Parte.Equals("") && !inputDescripcion.Equals("") && !inputModelo.Text.Equals("") && !inputPrecio.Text.Equals("") && !inputStock.Text.Equals(""))  
              {
                 Stream sm = uploadImage.PostedFile.InputStream;
                 BinaryReader br = new BinaryReader(sm);
@@ -50,9 +50,12 @@ namespace proyecto.Repuestos
                 repuesto.Nombre_Repuesto = inputNombreRepuesto1.Text;
                 repuesto.Marca = inputMarca.Text;
                 repuesto.Modelo = inputModelo.Text;
+                repuesto.N_Parte = inputN_Parte.Text;
                 repuesto.Precio = inputPrecio.Text;
                 repuesto.Stock = int.Parse(inputStock.Text);
-                
+                repuesto.Descripcion = inputDescripcion.Text;
+
+
                 repuesto.Imagen = imagen;
                 
 

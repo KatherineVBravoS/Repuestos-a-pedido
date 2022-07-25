@@ -4,4 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContenidoMenuContextual" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContenidoPrincipal" runat="server">
+  
+    <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>

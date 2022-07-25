@@ -66,9 +66,10 @@ namespace proyecto.Repuestos
             TextBox nombre = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputNombre");
             TextBox marca = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputMarca");
             TextBox modelo = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputModelo");
-            TextBox n_parte = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputNumeroParte");
+            TextBox n_parte = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputN_Parte");
             TextBox precio = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputPrecio");
             TextBox stock = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputStock");
+            TextBox descripcion = (TextBox)GridRepuestos.Rows[e.RowIndex].FindControl("inputDescripcion");
             FileUpload imagenNueva = (FileUpload)GridRepuestos.Rows[e.RowIndex].FindControl("ImagenUpdate");
             Stream sm = imagenNueva.PostedFile.InputStream;
             BinaryReader br = new BinaryReader(sm);
@@ -78,9 +79,10 @@ namespace proyecto.Repuestos
             repuesto.Nombre_Repuesto = nombre.Text;
             repuesto.Marca = marca.Text;
             repuesto.Modelo = modelo.Text;
-            repuesto.N_Parte = int.Parse(n_parte.Text);
+            repuesto.N_Parte = n_parte.Text;
             repuesto.Precio = precio.Text;
             repuesto.Stock = int.Parse(stock.Text);
+            repuesto.Descripcion = descripcion.Text;
             repuesto.Imagen = imagen;
 
             var respuesta = controller.UpdateRepuesto(repuesto);

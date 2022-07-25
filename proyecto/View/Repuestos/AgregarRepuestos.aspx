@@ -21,8 +21,8 @@
                 <asp:TextBox runat="server" type="text" class="form-control" ID="inputModelo" placeholder="Ej: Tracker" Width="529px"></asp:TextBox>
             </div>
             <div class="form-group col-md-6">
-                <asp:Label runat="server" for="inputModelo">Numero de parte</asp:Label>
-                <asp:TextBox runat="server" type="text" class="form-control" ID="TextBox1" placeholder="Ej: 105023" Width="529px"></asp:TextBox>
+                <asp:Label runat="server" for="inputN_Parte">Numero de parte</asp:Label>
+                <asp:TextBox runat="server" type="text" class="form-control" ID="inputN_Parte" placeholder="Ej: 105023" Width="529px"></asp:TextBox>
             </div>
             <div class="form-group col-md-6">
                 <asp:Label runat="server" for="inputPrecio">Precio</asp:Label>

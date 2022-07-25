@@ -9,10 +9,10 @@ namespace proyecto.Model
         public string Nombre_Repuesto { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
-        public int N_Parte { get; set; }
+        public string N_Parte { get; set; }
         public string Precio { get; set; }
         public int Stock { get; set; }
-        public int Descripcion { get; set; }
+        public string Descripcion { get; set; }
         public byte[] Imagen { get; set; }
 
 

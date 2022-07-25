@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -49,14 +51,18 @@ namespace proyecto
             }
         }
 
-        protected void btnBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void dtProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+        protected void Buscar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
     }
 }
